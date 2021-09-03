@@ -10,33 +10,42 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <a href="#">About</a>
-            <a href="#">Store</a>
-            <div class ="header-right"> 
-                <a href="#">Gmail</a>
-                <a href="#">Images</a>
-                <div id="apps-button"><button id="apps-button"></button></div>
+        <header>
+            <nav>
+                <div class="header-left">
+                    <a href="#">About</a>
+                    <a href="#">Store</a>
+                </div>
+                <div class="header-right">
+                    <a href="#">Gmail</a>
+                    <a href="#">Images</a>
+                    <div id="apps-button"><button id="apps-button"></button></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="logo">
+                <img src="Images/google.svg" alt="An image of the fake Google logo.">
             </div>
+           <div class="search-form"> <form class="search">
+
+                <div class="search-bar-container">
+                    <div class="search-bar-contents">
+                        <img class="search-button-icon" src="Images/google-search.png">
+                        <form id="search-bar-form" for="searchBar">
+                            <input class="search-bar" type="text">
+                        </form>
+                        <img class="microphone-icon" src="Images/google-microphone.png">
+                    </div>
+                </div>
+                <div class="search-buttons">
+                    <button id="google-search-btn">Google Search</button>
+                    <button id="feeling-lucky-btn">I'm Feeling Lucky</button>
+                </div>
+            </form>
         </div>
-        <div class ="logo">
-            <img src="Images/google.svg" alt="An image of the fake Google logo.">
-        </div>
-        <div class="search">
-            
-            <div class="searchBarContainer">
-                <img src = "Images/google-search.png">
-                <form id="searchBarFrm" for="searchBar" >
-                    <input type="text">
-                </form>
-                <img src="Images/google-microphone.png">
-            </div>
-            <div class="search-buttons">
-                <button id="google-search-btn">Google Search</button>
-                <button id="feeling-lucky-btn">I'm Feeling Lucky</button>
-            </div>
-        </div>
-        <div class="footer">
+        </main>
+        <footer>
             <div id="footer-left">
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
@@ -47,9 +56,8 @@
                 <a href="#">Terms</a>
                 <a href="#">Settings</a>
             </div>
-        </div>
-</body>
-</div>
+        </footer>
+    </div>
 </body>
 
 </html>

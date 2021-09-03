@@ -2,36 +2,121 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
 }
-.header {
+header {
+    
+}
+a {
+    text-decoration: none;
+    padding: 0, 10px, 0, 10px;
+}
+a:hover {
+    text-decoration: underline;
+    
+}
+nav {
     display: flex;
+    
 }
-.header-right {
-    float: right;
+nav .header-left {
+    justify-content: flex-start;
+}
+nav .header-right {
+    text-align: right;
+    justify-content: flex-end;
+    margin: 0 0 auto auto;
 }
 .container {
     flex-direction: column;
     height: 100%;
+    width: 100%;
     display: flex;
 }
 
-.footer {
+footer {
     display: flex;
+    position: absolute;
+    bottom: 0;
 }
 .logo {
     display: flex;
-    align-items: center;
     flex-direction: center;
+    justify-content: center;
+    margin-top: 20%;
+
 } 
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.search-bar {
+    border: hidden;
+    height: 25px;
+    flex:1;
+    margin: auto 0 auto 0;
+    
+}
+.search-bar-form {
+
+    margin: auto 0 auto 0;
+}
+
+.search-bar:focus {
+    border: none;
+    outline: none;
+}
+
+.search-button-icon {
+    height:25px;
+    width: 25px;
+    margin: auto 10px auto 10px;
+    
+}
 
 .search-buttons {
     display: flex;
+    top: 50%;
     padding-top: 18px;
+    justify-content: center;
 }
 
-.searchBarContainer {
+.microphone-icon {
+    width: 25px;
+    height: 25px;
+    margin: auto 10px auto 10px;
+}
+
+.search-bar-container {
     display: flex;
+    justify-content: center;
+    flex-basis: 25em;
+}
+
+.search-bar-contents {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(60,64,67,0.08);
+    border-radius: 24px;
+    max-width:580px;
+    height:45px;
+}
+
+
+
+.search-bar-contents:hover {
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+
 }
 
 .apps-button {
@@ -44,5 +129,5 @@ body {
 }
 
 .apps-button :hover {
-    background-color: rgba(60,64,67,0.08);;
+    background-color: rgba(60,64,67,0.08);
 }
