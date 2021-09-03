@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header {
+    display: flex;
+}
+.header-right {
+    float: right;
+}
+.container {
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+} 
+
+.search-buttons {
+    display: flex;
+    padding-top: 18px;
+}
+
+.searchBarContainer {
+    display: flex;
+}
+
+.apps-button {
+    border-radius: 50%;
+}
+
+#apps-button {
+    background: url('/Images/outline_apps_black_24dp.png');
+    
+}
+
+.apps-button :hover {
+    background-color: rgba(60,64,67,0.08);;
+}
