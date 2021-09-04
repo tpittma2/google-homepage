@@ -14,10 +14,28 @@ body {
     color: rgb(60, 64, 67);
 }
 
-.header-right {
+
+
+
+
+
+
+nav div {
     display: flex;
-    margin: 0 10px 0 10px;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
 }
+
+nav div a {
+    padding: 5px;
+}
+
+
+
+
+
+
 a {
     text-decoration: none;
     padding: 0, 20px, 0, 20px;
@@ -25,7 +43,11 @@ a {
 }
 
 header{
-    margin: 10px 20px 0 20px;
+    top:0;
+    width: 100%;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
 }
 a:hover {
     text-decoration: underline;
@@ -33,16 +55,19 @@ a:hover {
 }
 nav {
     display: flex;
+    height: 50px;
+    align-items: center;
     
 }
 nav .header-left {
     justify-content: flex-start;
+    width: 50%;
 }
 nav .header-right {
     text-align: right;
     justify-content: flex-end;
-    margin: 0 10px auto auto;
-}
+    right: 0;
+} 
 .container {
     flex-direction: column;
     height: 100%;
@@ -54,11 +79,21 @@ footer {
     display: flex;
     position: absolute;
     bottom: 0;
-    margin: 0 10px 20px 10px;
-    background: --button-search-background;
+    background: #f2f2f2;
     width: 100%;
     flex-wrap: wrap;
+    height: 40px;
+
 }
+
+footer div {
+    padding:10px 0 0 0;
+}
+
+footer a {
+    padding: 0 10px 0 10px;
+}
+
 
 .footer-right {
     text-align: right;
@@ -174,8 +209,11 @@ main {
 .apps-button {
     border-radius: 50%;
     background: url('/Images/outline_apps_black_24dp.png');
-    width: 25px;
-    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
 }
 
 #apps-button {
