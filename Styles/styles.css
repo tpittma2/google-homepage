@@ -62,6 +62,7 @@ nav {
 nav .header-left {
     justify-content: flex-start;
     width: 50%;
+    margin-left: 20px;
 }
 nav .header-right {
     text-align: right;
@@ -94,6 +95,9 @@ footer a {
     padding: 0 10px 0 10px;
 }
 
+.footer-left {
+    margin-left: 20px;
+}
 
 .footer-right {
     text-align: right;
@@ -208,7 +212,7 @@ main {
 
 .apps-button {
     border-radius: 50%;
-    background: url('/Images/outline_apps_black_24dp.png');
+    background: url('../Images/outline_apps_black_24dp.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto;
